@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Ashion Template">
+    <meta name="keywords" content="Ashion, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bán Giày</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
+    <link rel="stylesheet" href="css/jquery-ui.min.css" type="text/css">
+    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/index.css" type="text/css">
+    <link rel="stylesheet" href="css/admin_thongkenguoidung.css" type="text/css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_upward" />
+    
+    
+</head>
+
+<body>
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Offcanvas Menu Begin -->
+    <div class="offcanvas-menu-overlay"></div>
+    <div class="offcanvas-menu-wrapper">
+        <div class="offcanvas__close">+</div>
+        <ul class="offcanvas__widget">
+            <li><span class="icon_search search-switch"></span></li>
+            <li><a href="#"><span class="icon_heart_alt"></span>
+                <div class="tip">2</div>
+            </a></li>
+            <li><a href="#"><span class="icon_bag_alt"></span>
+                <div class="tip">2</div>
+            </a></li>
+        </ul>
+        <div class="offcanvas__logo">
+            <a href="admin_sanpham_1.html"><img src="img/logo.png" alt=""></a>
+        </div>
+        <div id="mobile-menu-wrap"></div>
+        <div class="offcanvas__auth">
+            <a href="#">Đăng nhập</a>
+        </div>
+    </div>
+    <!-- Offcanvas Menu End -->
+
+    <!-- Header Section Begin -->
+    <header class="header">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-3">
+                    <div class="header__logo">
+                        <a href="admin_sanpham_1.html"><img src="img/logo.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="col-9">
+                    <div class="header__right">
+                        <div class="header__right__auth">
+                            
+                            <div class="dropdown">
+                                
+                                <span class="dropdown-userName">Xin chào Admin</span>
+                                <div class="dropdown-content">
+                                    <a href="adminlogin.html" id="logoutBtn">Đăng xuất</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="canvas__open">
+                <i class="fa fa-bars"></i>
+            </div>
+        </div>
+    </header>
+    <!-- Header Section End -->
+
+
+    <div class="container-fluid vh-100">
+        <div class="row h-100">
+            <!-- Aside -->
+            <aside class="col-2 p-3" style="background-color: #f8f9fa;">
+                <div class="navMenu">
+                    <div class="navMenu">
+                        <h5><a href="admin_sanpham_1.html" class="navMenu-item">Quản lý sản phẩm</a></h5>
+                        <h5><a href="admin_donhang.html" class="navMenu-item" >Quản lý đơn hàng</a></h5>
+                        <h5><a href="admin_nguoidung_1.html" class="navMenu-item">Quản lý người dùng</a></h5>
+                        <h5><a href="admin_thongkesanpham.html" class="navMenu-item">Thống kê sản phẩm</a></h5>
+                        <h5><a href="admin_thongkenguoidung.html" class="navMenu-item"style="background-color: rgb(218, 218, 218); /* Màu nền khi hover */
+                            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                            color: black;
+                            font-weight: 600;">Thống kê khách hàng</a></h5>
+                    </div>
+                </div>
+            </aside>
+    
+            <!-- Main Content -->
+            <div class="col-10">
+                
+                <h1 class="d-flex justify-content-center align-items-center mb-5 mt-3">Thống Kê Khách hàng</h1>
+                
+
+                <div class="row mb-3" style="padding: 12px;">
+                    <div class="col d-flex justify-content-start align-items-center">
+                        <div class="font-bold">Từ:</div>
+                        <input type="date" class="ml-2" value="2024-01-12">
+                        <div class="font-bold ml-2 mr-2">đến</div>
+                        <input type="date" value="2024-05-12">
+                    </div>
+
+                    <div class="col d-flex justify-content-start align-items-center">
+                        <div class="font-bold">Tên khách hàng:</div>
+                        <input style="max-width: 250px;" type="text" c`lass="form-control form-control-custom font_black ml-2" id="nameInput" aria-describedby="nameInputHelp" placeholder="Nhập tên khách hàng..." value="Nguyễn Văn A">
+                        
+                    </div>
+
+                    <div class="col d-flex justify-content-end align-items-center">
+                        <a href="admin_thongkenguoidung.html" class="btn btn-success" style="text-decoration: none;">
+                            Thống kê
+                          </a>
+                          
+                    </div>
+                
+                    
+                </div>
+
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th>STT</th>
+                            <th>Tên khách hàng</th>
+                            <th>Địa chỉ
+                            </th>
+                            <th style="display: flex; align-items: center;">Số lượng đơn hàng đặt 
+                                <span id="sortQuantityAsc" class="btn-link btn-sm material-symbols-outlined ml-2" style="padding: 0px; font-size: 20px;">
+                                arrow_upward
+                                </span>
+                                <span id="sortQuantityDesc" class="btn-link btn-sm material-symbols-outlined ml-2" style="padding: 0px; font-size: 20px; transform: rotate(180deg);">
+                                    arrow_upward
+                                </span>
+                            </th>
+                            <th>Chi tiết</th>
+                            
+                        </tr>
+                    </thead>
+                    <tbody id="productTable">
+                        <tr>
+                            <td>1</td>
+                            <td>Nguyễn Văn A</td>
+                            <td>Đường Huỳnh Tấn Phát, Phường Tân Thuận Đông, Quận 7</td>
+                            <td class="itemQuantity"><div style="margin-left: 120px;">5</div></td>
+                            <td><a href="admin_donhang.html" class="btn btn-primary">Xem</a>
+                            </td>
+                            
+                        </tr>
+
+                       
+                        
+                    </tbody>
+
+                    
+    
+                    
+    
+    
+                    
+    
+                </table>
+
+            </div>
+            
+            
+
+        </div>
+    </div>
+    
+
+
+
+
+
+
+    <script>
+        // Hàm sắp xếp bảng theo số lượng bán
+        function sortTable(columnClass, asc) {
+
+            const rows = Array.from(document.querySelectorAll("#productTable tr"));
+            rows.sort((rowA, rowB) => {
+                console.log(1);
+                const valueA = parseInt(rowA.querySelector(`.${columnClass}`).textContent);
+                const valueB = parseInt(rowB.querySelector(`.${columnClass}`).textContent);
+                return asc ? valueA - valueB : valueB - valueA;
+            });
+            rows.forEach(row => document.querySelector("#productTable").appendChild(row));
+        }
+
+
+        // Xử lý sự kiện cho nút sắp xếp số lượng bán
+        document.getElementById('sortQuantityAsc').addEventListener('click', () => sortTable('itemQuantity', true));
+        document.getElementById('sortQuantityDesc').addEventListener('click', () => sortTable('itemQuantity', false));
+
+        // // Xử lý sự kiện cho nút sắp xếp tổng tiền bán
+            document.getElementById('sortRevenueAsc').addEventListener('click', () => sortTable('revenue', true));
+            document.getElementById('sortRevenueDesc').addEventListener('click', () => sortTable('revenue', false));
+
+
+        // Hàm sắp xếp bảng theo số lượng bán
+        function sortTable(columnClass, asc) {
+            const rows = Array.from(document.querySelectorAll("#productTable tr"));
+            rows.sort((rowA, rowB) => {
+            const valueA = parseInt(rowA.querySelector(`.${columnClass}`).textContent);
+            const valueB = parseInt(rowB.querySelector(`.${columnClass}`).textContent);
+            return asc ? valueA - valueB : valueB - valueA;});
+            rows.forEach(row => document.querySelector("#productTable").appendChild(row));
+        }
+
+
+// Xử lý sự kiện cho nút sắp xếp số lượng bán
+document.getElementById('sortQuantityAsc').addEventListener('click', () => sortTable('itemQuantity', true));
+document.getElementById('sortQuantityDesc').addEventListener('click', () => sortTable('itemQuantity', false));
+
+// // Xử lý sự kiện cho nút sắp xếp tổng tiền bán
+// document.getElementById('sortRevenueAsc').addEventListener('click', () => sortTable('revenue', true));
+// document.getElementById('sortRevenueDesc').addEventListener('click', () => sortTable('revenue', false));
+    </script>
+
+
+
+
+
+
+
+<!-- Js Plugins -->
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.magnific-popup.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/mixitup.min.js"></script>
+<script src="js/jquery.countdown.min.js"></script>
+<script src="js/jquery.slicknav.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/jquery.nicescroll.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/admin.js"></script>
+
+</body>
+
+</html>
