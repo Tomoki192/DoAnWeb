@@ -1,0 +1,109 @@
+.navMenu{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.navMenu-item{
+    padding: 20px; /* Khoảng cách bên trong */
+    border-radius: 5px; /* Góc bo tròn */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Hiệu ứng mượt */
+    cursor: pointer; /* Con trỏ tay khi hover */
+    text-decoration: none; /* Xóa gạch chân mặc định */
+    display: block; /* Để chiếm toàn bộ chiều rộng */
+    color: #000; /* Màu chữ */
+}
+
+.navMenu-item:hover {
+    background-color: white; /* Màu nền khi hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Hiệu ứng bóng khi hover */
+    color: black;
+    font-weight: 600; /* Màu chữ khi hover */
+}
+
+.custom-card {
+    border-radius: 5px;
+    padding: 15px;
+    height: 100%;
+  }
+
+.table thead tr th{
+    border: none;
+}
+
+.table tbody tr td{
+    vertical-align: middle;
+}
+
+.table tbody tr td:nth-child(2) {
+    width: 300px; /* Cố định chiều rộng cho cột mô tả */
+    word-wrap: break-word; /* Chia dòng khi nội dung quá dài */
+}
+
+
+
+
+
+.font-bold {
+    font-weight: 600; /* Làm đậm chữ */
+}
+
+.font-red{
+    color: red;
+    font-weight: 600;
+}
+
+.itemImage{
+    height: 80px;
+    width: 80px;
+}
+
+.search{
+    background-color: rgb(218, 218, 218);
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.search{
+    background-color: rgb(218, 218, 218);
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.search input{
+    border: none;
+    background: none;
+    outline: none;
+    font-size: 16px;
+    font-weight: 400;
+    max-width: 400px;
+}
+
+.icon_search {
+    font-size: 16px;            /* Kích thước biểu tượng */
+    color: #000;               /* Màu mặc định */
+    transition: all 0.3s ease; /* Hiệu ứng mượt khi hover */
+    cursor: pointer;           /* Thay đổi con trỏ khi hover */
+}
+
+.icon_search:hover {
+    color: white;            /* Màu sắc khi hover */
+    transform: scale(1.2);     /* Phóng to biểu tượng */
+}
+
+.mark-success{
+    padding: 5px 10px;          /* Khoảng cách giữa chữ và viền */
+    background-color: green;    /* Màu nền xanh lá */
+    color: white;               /* Màu chữ trắng */
+    border-radius: 5px;         /* Làm cho các góc tròn (tùy chọn) */
+    font-weight: bold;    
+}
+
+.font_black{
+    color: #000;
+    }
+    
+    .font_black:focus{
+        color: #000;
+    }
+
+
